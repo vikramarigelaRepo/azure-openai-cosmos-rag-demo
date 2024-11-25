@@ -7,7 +7,7 @@ Let us see how to enable vector search in Azure cosmos db
   * Enable feature Vector Search for NoSQL API under features
     ![image](https://github.com/user-attachments/assets/5661f958-73b6-450e-9fb0-ab34d2895ca3)
 
-  * Container Vector Policies 
+  * Container Vector Policies :
      Performing vector search with Azure Cosmos DB for NoSQL requires you to define a vector policy for the container. This 
      provides essential information for the database 
      engine to conduct efficient similarity search for vectors found in the container's documents. This also informs the 
