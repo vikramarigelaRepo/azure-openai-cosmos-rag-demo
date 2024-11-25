@@ -4,10 +4,10 @@ a simple RAG app using Azure Open AI and Azure Cosmos Db as vector store.
 
 # Enabling Vector Store capabilities in Azure Cosmos db
 Let us see how to enable vector search in Azure cosmos db
-  1 Enable feature Vector Search for NoSQL API under features
+  * Enable feature Vector Search for NoSQL API under features
     ![image](https://github.com/user-attachments/assets/5661f958-73b6-450e-9fb0-ab34d2895ca3)
 
-  2 Container Vector Policies :
+  * Container Vector Policies :
      Performing vector search with Azure Cosmos DB for NoSQL requires you to define a vector policy for the container. This 
      provides essential information for the database 
      engine to conduct efficient similarity search for vectors found in the container's documents. This also informs the 
@@ -24,7 +24,16 @@ Let us see how to enable vector search in Azure cosmos db
          euclidean, which has values from 0 (most similar) to +inf) (least similar).
        
   * Policy with Single Vector Path
-    ![image](https://github.com/user-attachments/assets/822343dd-4896-4e2a-9dba-82e4d22dc290)
+     * {
+          "vectorEmbeddings": [
+              {
+                  "path":"/vector1",
+                  "dataType":"float32",
+                  "distanceFunction":"cosine",
+                  "dimensions":1536
+              }
+          ]
+      }
 
     ![image](https://github.com/user-attachments/assets/c1fb5164-da6b-433a-94ef-d858cab89916)
 
