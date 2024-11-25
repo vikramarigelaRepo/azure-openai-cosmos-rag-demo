@@ -3,7 +3,7 @@ Repo that explains how to enable vector store features in Azure cosmos db and im
 a simple RAG app using Azure Open AI and Azure Cosmos Db as vector store.
 
 # Enabling Vector Store capabilities in Azure Cosmos db
-Let us see how to enable vector search in Azure cosmos db
+Let us see how to enable vector search in Azure cosmos db. 
   * Enable feature Vector Search for NoSQL API under features
     ![image](https://github.com/user-attachments/assets/5661f958-73b6-450e-9fb0-ab34d2895ca3)
 
@@ -24,18 +24,22 @@ Let us see how to enable vector search in Azure cosmos db
           euclidean, which has values from 0 (most similar) to +inf) (least similar).
        
   * Policy with Single Vector Path
-     {
-          "vectorEmbeddings": [
-              {
-                  "path":"/vector1",
-                  "dataType":"float32",
-                  "distanceFunction":"cosine",
-                  "dimensions":1536
-              }
-          ]
-      }
+
+    ![image](https://github.com/user-attachments/assets/431db8af-2f38-4a75-a8f3-57754301cbd1)
 
     ![image](https://github.com/user-attachments/assets/c1fb5164-da6b-433a-94ef-d858cab89916)
+
+  * Vector Indexing Policies
+    Vector indexes increase the efficiency when performing vector searches using the VectorDistance system function. Vectors searches have lower latency, higher throughput, 
+    and less RU consumption when using a vector index. You can specify the following types of vector index policies:
+
+    ![image](https://github.com/user-attachments/assets/ef812134-e02b-4ab4-a114-fbb9b05b7ea1)
+
+    Example of valid vector indexing policy
+
+   ![image](https://github.com/user-attachments/assets/9712e0d1-3921-4fd6-b69f-9c057a2b06d8)
+
+
 
     
 
