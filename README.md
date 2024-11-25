@@ -19,12 +19,12 @@ Let us see how to enable vector search in Azure cosmos db
       * “dimensions”: The dimensionality or length of each vector in the path. All vectors in a path should have the same  
         number of dimensions. (default 1536).
       * “distanceFunction”: The metric used to compute distance/similarity. Supported metrics are:
-         cosine, which has values from -1 (least similar) to +1 (most similar).
-         dot product, which has values from -inf (least similar) to +inf (most similar).
-         euclidean, which has values from 0 (most similar) to +inf) (least similar).
+          cosine, which has values from -1 (least similar) to +1 (most similar).
+          dot product, which has values from -inf (least similar) to +inf (most similar).
+          euclidean, which has values from 0 (most similar) to +inf) (least similar).
        
   * Policy with Single Vector Path
-     * {
+     {
           "vectorEmbeddings": [
               {
                   "path":"/vector1",
