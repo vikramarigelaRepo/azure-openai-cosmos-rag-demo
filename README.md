@@ -60,9 +60,8 @@ The code for the solution is in the python notebook "cosmosdb-nosql-vector-azure
    * Load the required environment variables from a .env file.
    * Initialize the Azure OpenAI and Cosmos DB clients using the loaded environment variables.
    * Create Containers with container vector policy and vector indexing policy. cache container is to implement semantic caching which saves user prompt along with response and if user enters same prompt the response will be returned from the cache container instead of doing vector search again.
-   * Initialize the Azure OpenAI and Cosmos DB clients using the loaded environment variables.
    * Define functions for generating embeddings, inserting documents into Cosmos DB, retrieving chat history, performing vector searches, and inserting chat documents.
-   * we are using Gradio framework for spinnig up a simple chat like interface.
+   * Note :we are using Gradio framework for spinnig up a simple chat like interface.
 # Application Screenshots
 
   user prompt and response
