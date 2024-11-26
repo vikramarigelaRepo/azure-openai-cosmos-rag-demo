@@ -49,7 +49,13 @@ The code for the solution is in the python notebook "cosmosdb-nosql-vector-azure
 
 # Prerequisites
    * Create a Cosmos Account and enable vector feature. Go to Cosmos account --> Settings --> Features -->Select the Vector Search in Azure Cosmos DB for NoSQL” feature --> Enable
-   *
+   * Azure Open Ai Service with GPT-35-Turbo/GPT-4o and text-embedding-ada-002 models
+     ![image](https://github.com/user-attachments/assets/52163ea1-3f38-4e29-b6c7-089491b8da19)
+   * knowledge on python code, environments running and note books.
+     https://code.visualstudio.com/docs/datascience/jupyter-notebooks
+     
+# Walk through of the code in each cell of python notebook
+
 
 
     
