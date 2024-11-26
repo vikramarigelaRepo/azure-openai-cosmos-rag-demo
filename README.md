@@ -48,8 +48,7 @@ https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/vector-search
 The code for the solution is in the python notebook "cosmosdb-nosql-vector-azureopenai-tutorial.ipynb" which is in the repo. Execute each cell one after the other to see it in action.
 
 # Prerequisites
-   * Create a Cosmos Account and enable vector feature. Go to Cosmos account --> Settings --> Features --> Select the  
-     Vector Search in Azure Cosmos DB for NoSQL” feature --> Enable
+   * Create a Cosmos Account and enable vector feature. Go to Cosmos account --> Settings --> Features -->Select the Vector Search in Azure Cosmos DB for NoSQL” feature --> Enable
    *
 
 
