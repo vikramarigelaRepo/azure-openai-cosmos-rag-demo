@@ -43,8 +43,32 @@ https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/vector-search
    ![image](https://github.com/user-attachments/assets/8960d63c-95b3-4b45-94d1-5eb292d7552b)
 
 
+# Implement RAG using Azure Cosmos db As vector store and Azure Open AI Service.
 
+The code for the solution is in the python notebook "cosmosdb-nosql-vector-azureopenai-tutorial.ipynb" which is in the repo. Execute each cell one after the other to see it in action.
 
+# Prerequisites
+   * Azure Cosmos DB: Create a Cosmos Account and enable vector feature. Go to Cosmos account --> Settings --> Features -->Select the Vector Search in Azure Cosmos DB for NoSQL” feature --> Enable
+   * Azure OpenAI Service : Azure Open AI Service with GPT-35-Turbo/GPT-4o and text-embedding-ada-002 models
+     ![image](https://github.com/user-attachments/assets/52163ea1-3f38-4e29-b6c7-089491b8da19)
+   * Environment Setup: Ensure you have Python installed and can run Jupyter Notebooks.
+     https://code.visualstudio.com/docs/datascience/jupyter-notebooks
+     
+# Walk through of the code in each cell of python notebook
+   * Install the required Python packages listed in requirements.txt.
+   * Imports all the necessary libraries required for the notebook:
+   * Load the required environment variables from a .env file.
+   * Initialize the Azure OpenAI and Cosmos DB clients using the loaded environment variables.
+   * Create Containers with container vector policy and vector indexing policy. cache container is to implement semantic caching which saves user prompt along with response and if user enters same prompt the response will be returned from the cache container instead of doing vector search again.
+   * Initialize the Azure OpenAI and Cosmos DB clients using the loaded environment variables.
+   * Define functions for generating embeddings, inserting documents into Cosmos DB, retrieving chat history, performing vector searches, and inserting chat documents.
+   * we are using Gradio framework for spinnig up a simple chat like interface.
+# Application Screenshots
 
-    
+  user prompt and response
 
+  ![alt text](image.png)
+  
+  cached result
+
+  ![alt text](image-1.png)
