@@ -3,7 +3,7 @@ Repo that explains how to enable vector store features in Azure cosmos db and im
 a simple RAG app using Azure Open AI and Azure Cosmos Db as vector store.
 
 # Enabling Vector Store capabilities in Azure Cosmos db
-Let us see how to enable vector search in Azure cosmos db. For Complete details please check go through link 
+Let us see how to enable vector search in Azure cosmos db. For complete details on Azure cosmos db powerful vector store feature, please go through link 
 https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/vector-search
   * Enable feature Vector Search for NoSQL API under features
     ![image](https://github.com/user-attachments/assets/5661f958-73b6-450e-9fb0-ab34d2895ca3)
